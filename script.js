@@ -9,6 +9,7 @@ function mostrarTexto(caso) {
       4: "Essa é uma boa pergunta. E a resposta é bem simples. Como você vai poder conferir mais a frente na sessão Rotas e Valores, temos uma parceria com o Bradesco, o único banco brasileiro que atende suas necessidades tanto na terra quanto nas estelas de maneira simplificada e rápida. Na sessão de Rotas e Valores, faça a simulação de financiamento ou parcelamento com Bradesco, e veja o quão longe você pode ir sem estourar o orçamento.",
 
       5: "Fique a vontade para entrar em contato conosco: Email: solaratendimento@solar.com.br\nWhatsapp: +55 11 99999 9999\nNúmero de telefone: +55 800-999\n(Tempo médio para retorno: 2 horas)"
+      
     };
     document.getElementById("opcoes_texto").textContent = textos[caso];
   
