@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root{
   /*cores de fundos:*/
@@ -7,13 +7,16 @@
     --c-3: #1b2c3f;
     --C-4: #D9D9D9;
     --c-5: #b65433;
+    --c-6: #525152;
+    --c-7: #2b5075;
 
   /*cores de letras: */
     --c-a: #fff;
-    --c-b: ;
+    --c-b: #b7b7b7;
 
   /* fontes de letras: */
     --font-1: 'Inria Sans', sans-serif;
+    --font-2: "Roboto Condensed", sans-serif;
 
 }
 
@@ -70,7 +73,6 @@ body {
   display: flex;
   flex-direction: column;
   gap:2rem;
-  
 }
 
 .cabecalho_menu_img {
@@ -150,7 +152,7 @@ body {
   background-color: var(--C-4);
   border-radius:20px;
   width: 68rem;
-  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+  box-shadow: 4px 4px 10px rgba(0.7, 0, 0, 0);
 }
 
 .secao_1_titulo {
@@ -183,7 +185,7 @@ body {
   margin-bottom:10px;
 }
 
-.secao_1_sub3 {
+.secao_1_sub4 {
   text-indent: 40px;
 }
 
@@ -192,7 +194,6 @@ body {
   width: 300px;
   margin-left: -9.2rem;
 }
-
 
 
 /* Seção 2 ----------------------------------------------- */
@@ -207,10 +208,11 @@ body {
   margin: 3rem 6rem 3rem 3rem;
   background-color: var(--c-5);
   border-radius: 20px;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.7);
 }
 
 .secao_2_textos {
-  margin: 4rem 6rem 4rem 6rem;
+  margin: 4rem 6rem 4.5rem 6rem;
   font-family: var(--font-1);
   font-size: 20px;
   color: var(--c-a);
@@ -228,17 +230,17 @@ body {
 
 .secao_2_sub1 {
   text-indent: 40px;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
 .secao_2_sub2 {
   text-indent: 40px;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
 .secao_2_sub3 {
   text-indent: 40px;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
 a {
@@ -253,12 +255,38 @@ a {
 }
 
 
+/*linha -----------------------------------------------*/
+
+.hr1 {
+  border: none;
+  width: 100%;
+  height: 10px;
+  background-color: var(--c-1);
+  margin: 50px 0 30px 0;
+}
 
 
 /* Seção 3 -------------------------------------------*/
+
+.secao_3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 3rem 10rem;
+}
+
+.secao_3_titulo {
+  margin-bottom: 4rem;
+  font-family: var(--font-1);
+  color: var(--c-a);
+  font-size: 60px;
+  font-style: italic;
+  
+}
+
 .secao_3_caixas {
   display: flex;
-  max-width: 1900px;
+  
   gap: 0;
 }
 
@@ -271,28 +299,98 @@ a {
 .opcao {
   width: 500px;
   padding: 1rem;
-  background-color: #ddd;
+  font-family: var(--font-2);
+  color: var(--C-4);
   cursor: pointer;
   border-radius: 8px 0px 0px 8px;
   transition: background-color 0.3s;
+  text-align: end;
+  font-weight: 900;
 }
 
 .opcao:hover {
-  background-color: #ccc;
+  background-color: rgba(149, 152, 155, 0.1);
   border-radius: 8px 0px 0px 8px;
 }
 
 .opcao.active {
-  background-color: #aaa;
+  background-color: rgba(217, 217, 217, 0.5);
   font-weight: bold;
-  color: white;
+  color: var(--c-a);
   border-radius: 8px 0px 0px 8px;
 }
 
 .secao_3_opcoes_texto {
   flex: 1;
   padding: 2rem;
-  background-color: #aaa;
+  background-color: rgba(217, 217, 217, 0.5);
   color: #fff;
   border-radius: 0px 8px 8px 0px;
+}
+
+/* footer -------------------------------------------------*/
+
+.footer {
+  margin-top: 6rem;
+  padding: 2rem 1rem 2rem 1rem;
+  background-color: var(--c-1);
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  justify-content: space-between;
+}
+
+.footer_infos {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.footer_titulo {
+  margin-left: 2.5rem;
+  font-family: var(--font-2);
+  color: var(--c-b);
+}
+
+.footer_logo {
+  margin-left: 3rem;
+  margin-top: -0.5rem;
+  height: auto;
+  width: 150px;
+}
+
+.footer_creditos {
+  margin-left: 3rem;
+  color: var(--c-b);
+  font-family: var(--font-1);
+  font-weight: 900;
+  font-style: italic;
+}
+
+.planetas_solar{
+  margin: 0 13rem;
+}
+
+.planetas_solar1{
+  height: 40px;
+}
+
+.planetas_solar2{
+  margin-left: 3rem;
+  height: 40px;
+}
+
+.planetas_solar3{
+  margin-left: 3rem;
+  height: 40px;
+}
+
+.planetas_solar4{
+  margin-left: 3rem;
+  height: 40px;
+}
+
+.planetas_solar5{
+  margin-left: 3rem;
+  height: 40px;
 }
